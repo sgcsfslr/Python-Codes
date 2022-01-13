@@ -1,0 +1,39 @@
+# From https://www.testgorilla.com/test-library/programming-skills-tests/python-coding-test-entry-level-algorithms/
+# The test requirement was 10mins to complete, 
+# However it took me around 4 hours to research before I drafted out the solution and tested all scenarios. 
+""""
+Summary of the Python (coding): entry-level algorithms test
+
+This coding test assesses a candidate's ability to program a small algorithm in Python, testing their basic programming skills. Using a short and straightforward coding task, this test helps you identify developers with the most essential Python skills.
+"""
+
+
+#def str_to_list( str ) :
+#    list1 = input("Please enter your input : ")
+    #remove_space = [x.strip(' ') for x in list1]
+#    delete_empty = [ele for ele in list1 if ele.strip()]
+    #print(remove_space)
+#    print(delete_empty)
+res=()
+
+def str_to_list( res ) :
+    #stringss = ()
+    list1 = input("Please enter your input : ")
+
+    #stringss =("my strings 5 conins 6 cents")
+    #list1 = list(stringss)
+
+    res = []
+    for ele in list1:
+        if ele.isdigit():
+            eledigit = int(ele)
+            #print(eledigit)
+            if eledigit >=6:
+                continue
+                
+        if ele.strip():
+            res.append(ele)
+        
+    print(res)
+
+str_to_list(res)

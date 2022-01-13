@@ -1,0 +1,26 @@
+# Draw a Snake Program DrawSnake.py
+# Reference from China University Python Course
+
+import turtle
+
+def drawSnake (rad, angle, len, neckrad):
+    for i in range(len):
+        turtle.circle(rad, angle)
+        turtle.circle(-rad, angle)
+    turtle.circle(rad, angle/2)
+    turtle.fd(rad) # fd is the same as forward 
+    turtle.circle(neckrad+1, 180)
+    turtle.fd(rad*2/3)
+
+def main():
+    turtle.setup(1500, 1500, -500, 0) # Creating the Canvas size starting from 0,0 with X = 1300 and Y = 800
+    pythonsize = 3 # original is 30
+    turtle.pensize(pythonsize)
+    turtle.pencolor("blue")
+    turtle.seth(-10)
+    drawSnake(20, 40, 5, pythonsize)
+    drawSnake(40, 80, 5, pythonsize/2)
+    #drawSnake(80, 160, 5, pythonsize/2)
+    #drawSnake(160, 320, 5, pythonsize/2)
+    
+main()

@@ -1,0 +1,10 @@
+# Print the abbreviation of the Calendar Month AbbrMonth.py
+# Reference from China University Python Course 
+
+months = "JanFebMarAprMayJunJulAugSepOctNovDec" # Remember in Python the position for Jan is 0 for J, 1 for a, 2 for n
+n = input("Enter the Month in number (E.g. 1 for Jan, 2 for Feb): ")
+pos=(int(n)-1) * 3
+#print(pos)
+monthAbbrev=months[pos:pos+3]
+#print(months[pos:pos+3])
+print("The Abbreviation of the Month number entered is: " + monthAbbrev+ ".")

@@ -1,0 +1,12 @@
+#Temperature Convertor TempConvert.py
+# Reference from China University Python course
+
+val = input("Enter the Temperature you want to convert (e.g. 32C): ")
+if val[-1] in ['C', 'c']: # [-1] means the last placement of the entry, in this case its C
+    f = 1.8 * float(val[0:-1]) + 32
+    print("The reading in Fahrenheit is: %.2fF"%f)
+elif val[-1] in ['F' , 'f']:
+    c = (float(val[0:-1]) - 32) / 1.8
+    print("The reading in Celsius is: %.2fC"%c)
+else:
+    print("The Entry is wrong, please try again. Thank you.")
